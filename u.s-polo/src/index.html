@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U.S POLO-clone</title>
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    }
+  </script>
+
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+
+  <div class="w-full min-h-screen mx-auto">
+
+    <!-- OFFER BAR -->
+    <div class="bg-black p-3 md:p-4 text-center text-white hover:underline cursor-pointer transition text-sm md:text-base">
+      BUY 2 GET 30% OFF - Coupon auto-applies at checkout.
+    </div>
+
+    <!-- HEADER -->
+    <div class="w-full shadow-md sticky top-0 bg-white z-50">
+      <div class="flex justify-between items-center px-4 md:px-6 py-3 md:py-4">
+
+        <!-- Logo -->
+        <img class="h-10 md:h-14 w-auto object-contain" src="logous.png" alt="logo">
+
+        <!-- Desktop Icons -->
+        <ul class="hidden md:flex items-center gap-6">
+          <li><img class="h-7 w-7 cursor-pointer hover:scale-125 transition" src="user.png"></li>
+          <li><img class="h-7 w-7 cursor-pointer hover:scale-125 transition" src="search.png"></li>
+          <li><img class="h-7 w-7 cursor-pointer hover:scale-125 transition" src="heart.png"></li>
+          <li><img class="h-7 w-7 cursor-pointer hover:scale-125 transition" src="diamond.png"></li>
+          <li><img class="h-7 w-7 cursor-pointer hover:scale-125 transition" src="shopping-cart.png"></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+          <img  src="hamburger.png" class="h-7 w-7 ">
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden bg-sky-950 text-white p-4 md:hidden">
+        <ul class="flex flex-col text-sm gap-3">
+          <li>HOME</li>
+          <li>MEN</li>
+          <li>WOMEN</li>
+          <li>KIDS</li>
+          <li>FOOTWEAR</li>
+          <li>INNERWEAR</li>
+          <li>SALE</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="bg-sky-950 hidden md:flex justify-center py-3 shadow-md">
+      <ul class="uppercase text-white flex gap-3 lg:gap-6 items-center px-4 text-xs md:text-sm lg:text-base">
+
+        <li class="hover:text-yellow-300 transition"><h4>HOME</h4></li>
+        <li class="flex items-center gap-1 hover:text-yellow-300 transition"><h4>MEN</h4><span class="text-xs">▼</span></li>
+        <li class="flex items-center gap-1 hover:text-yellow-300 transition"><h4>WOMEN</h4><span class="text-xs">▼</span></li>
+        <li class="flex items-center gap-1 hover:text-yellow-300 transition"><h4>KIDS</h4><span class="text-xs">▼</span></li>
+        <li class="flex items-center gap-1 hover:text-yellow-300 transition"><h4>FOOTWEAR</h4><span class="text-xs">▼</span></li>
+        <li class="flex items-center gap-1 hover:text-yellow-300 transition"><h4>INNERWEAR</h4><span class="text-xs">▼</span></li>
+        <li class="flex items-center gap-1 hover:text-yellow-300 transition"><h4>SALE</h4><span class="text-xs">▼</span></li>
+
+      </ul>
+    </div>
+
+    <!-- HERO IMAGES -->
+    <div class="w-full h-[180px] sm:h-[250px] md:h-[300px] bg-[url(./image.jpg)] bg-cover bg-center"></div>
+    <div class="bg-[url(./img2.webp)] bg-cover bg-center w-full h-[350px] sm:h-[450px] md:h-[722px] mt-5"></div>
+    <div class="bg-[url(./tiger.webp)] w-full h-[350px] sm:h-[450px] md:h-[686px] bg-cover bg-center mt-5"></div>
+
+    <!-- 2-COLUMN GRID -->
+    <div class="mt-5 mx-auto w-[95%] grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div class="bg-[url(./tiger2.webp)] h-[350px] sm:h-[450px] md:h-[600px] w-full bg-cover bg-center"></div>
+      <div class="bg-[url(./winterwear.webp)] h-[350px] sm:h-[450px] md:h-[600px] w-full bg-cover bg-center"></div>
+    </div>
+
+    <!-- 3 PRODUCT GRID -->
+    <div class="mt-5 mx-auto w-[95%]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <img src="./jack.webp" class="w-full h-[350px] md:h-[500px] object-cover">
+        <img src="./shir.webp" class="w-full h-[350px] md:h-[500px] object-cover">
+        <img src="./jean.webp" class="w-full h-[350px] md:h-[500px] object-cover">
+      </div>
+    </div>
+
+    <!-- 4 CATEGORY GRID -->
+    <div class="w-[95%] mt-5 mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5">
+      <img class="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover" src="./black.webp">
+      <img class="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover" src="./menswear.webp">
+      <img class="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover" src="./womens.webp">
+      <img class="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover" src="./footwear.webp">
+    </div>
+
+    <!-- FEATURE BLOCKS -->
+    <div class="px-4 md:px-14 pt-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-[url(./icon-men.webp)] h-[350px] sm:h-[450px] md:h-[600px] bg-cover bg-center"></div>
+      <div class="bg-[url(./iconwomen.webp)] h-[350px] sm:h-[450px] md:h-[600px] bg-cover bg-center"></div>
+    </div>
+
+    <div class="px-4 md:px-14 pt-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-[url(./foot-icon.webp)] h-[350px] sm:h-[450px] md:h-[600px] bg-cover bg-center"></div>
+      <div class="bg-[url(./icon-kids.webp)] h-[350px] sm:h-[450px] md:h-[600px] bg-cover bg-center"></div>
+    </div>
+
+    <div class="px-4 md:px-14 pt-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-[url(./off-duty.webp)] h-[350px] sm:h-[450px] md:h-[600px] bg-cover bg-center"></div>
+      <div class="bg-[url(./inner.webp)] h-[350px] sm:h-[450px] md:h-[600px] bg-cover bg-center"></div>
+    </div>
+
+    <!-- BLOG SECTION -->
+    <div class="mt-5 text-center">
+      <h2 class="uppercase text-black text-2xl md:text-4xl font-semibold">on the blog</h2>
+    </div>
+
+    <div class="mt-5 mx-auto w-[95%]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <img src="./sunit.webp" class="w-full h-[350px] md:h-[600px] object-cover">
+        <img src="./girl.webp" class="w-full h-[350px] md:h-[600px] object-cover">
+        <img src="./poloshirts.webp" class="w-full h-[350px] md:h-[600px] object-cover">
+      </div>
+    </div>
+
+    <!-- SHOP BUTTON -->
+    <div class="flex justify-center mt-5">
+      <button class="uppercase border-2 px-8 py-3 border-black rounded-lg hover:bg-black hover:text-white transition">
+        shop all
+      </button>
+    </div>
+
+    <!-- LARGE BACKGROUND -->
+    <div class="bg-[url(./group.webp)] bg-cover bg-center w-full h-[500px] sm:h-[650px] md:h-[901px] mt-5"></div>
+
+    <!-- SMALL TEXT BANNER -->
+    <div class="bg-[url(./text.webp)] bg-cover bg-center w-full h-[150px] sm:h-[200px] md:h-[300px] mt-5"></div>
+
+    <!-- EMAIL SECTION -->
+    <div class="bg-blue-950 flex justify-center py-10">
+      <div>
+        <p class="text-amber-100 mb-3 text-center md:text-left text-lg">Join our Mailing List for Updates</p>
+
+        <div class="flex flex-col md:flex-row gap-4">
+          <input class="border-2 border-amber-50 placeholder:text-gray-300 p-2 rounded-sm" type="email" placeholder="Enter your email">
+          <input class="bg-red-500 text-amber-50 border h-10 px-6 uppercase rounded-sm cursor-pointer hover:bg-red-600 transition" type="button" value="subscribe">
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="bg-blue-950 grid grid-cols-1 md:grid-cols-3 text-white py-10 gap-10 text-center md:text-left">
+
+      <div>
+        <h1 class="uppercase font-bold mb-2">Policies</h1>
+        <a href="/">Terms and Conditions</a><br>
+        <a href="/">Delivery & Shipping</a><br>
+        <a href="/">Return Policy</a><br>
+        <a href="/">Privacy Policy</a><br>
+        <a href="/">Frequently Asked Questions</a>
+      </div>
+
+      <div>
+        <h1 class="uppercase font-bold mb-2">Quick Help</h1>
+        <a href="/">About Us</a><br>
+        <a href="/">Our Story</a><br>
+        <a href="/">Contact Us</a><br>
+        <a href="/">Store Locator</a>
+      </div>
+
+      <div class="flex flex-col items-center md:items-start">
+        <h1 class="uppercase font-bold mb-2">Download The App</h1>
+        <img class="w-[143px] mb-3" src="./appstore.webp">
+        <img class="w-[143px]" src="./googleplay.png">
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="flex flex-col md:flex-row justify-center items-center gap-5 bg-blue-900 py-4 px-2 text-center">
+      <h1 class="text-white text-sm md:text-base">Copyright © SHARAD PAL | SS Fashions</h1>
+
+      <div class="flex gap-4">
+        <a href="#"><img class="w-8 h-8 invert" src="./icons8-x-logo-50.png"></a>
+        <a href="#"><img class="w-8 h-8 invert" src="./icons8-instagram-logo-24.png"></a>
+        <a href="#"><img class="w-8 h-8 invert" src="./icons8-facebook-logo-80.png"></a>
+        <a href="#"><img class="w-8 h-8 invert" src="./icons8-youtube-logo-50.png"></a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
